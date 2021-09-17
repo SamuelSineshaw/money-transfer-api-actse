@@ -1,0 +1,19 @@
+
+server:
+  port: 9090
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/moneytransfer
+    username: moneytransfer
+    password: m0n3ytr4n5f3r
+  sql:
+    init:
+      mode: always
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate: org.hibernate.dialect.PostgreSQLDialect
