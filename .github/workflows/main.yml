@@ -16,13 +16,13 @@ jobs:
       - name: Build with Maven  # The "Build with Maven" step runs the Maven package target in non-interactive mode to ensure that your code builds, tests pass, and a package can be created.
         run: mvn --batch-mode --update-snapshots verify
 
-cd:
-  needs: ci #If you have a job that must only run after another job has completed, you can use the needs keyword to create this dependency.
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v2
-    - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
-      with:
+  cd:
+      needs: ci #If you have a job that must only run after another job has completed, you can use the needs keyword to create this dependency.
+      runs-on: ubuntu-latest
+      steps:
+         - uses: actions/checkout@v2
+        - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+         with:
         heroku_api_key: ${{secrets.HEROKU_API_KEY}}
         # Now go to your Heroku account and go to Account Settings. Scroll to the bottom until you see API Key. Copy this key and go to your project's repository on GitHub.
         # In your Repo, go to Settings -> Secrets and click on "New Secret". Then enter HEROKU_API_KEY as the name and paste the copied API Key as the value.
