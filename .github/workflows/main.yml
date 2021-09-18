@@ -21,7 +21,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - uses: actions/checkout@v2
-        - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+        - uses: heroku-deploy@v3.12.12 # This is the action
         with:
             heroku_api_key: ${{secrets.HEROKU_API_KEY}}
             # Now go to your Heroku account and go to Account Settings. Scroll to the bottom until you see API Key. Copy this key and go to your project's repository on GitHub.
