@@ -28,7 +28,7 @@ jobs:
             # You can now push your project to GitHub and it will be automatically deployed to Heroku henceforth.
             heroku_app_name: "money-transfer-api-samuel" #Must be unique in Heroku
             heroku_email: "slimsami2007@gmail.com"
-            #healthcheck: "https://money-transfer-api-actse.herokuapp.com/actuator/health"
+            #healthcheck: "https://money-transfer-api-samuel.herokuapp.com/actuator/health"
             healthcheck: "https://money-transfer-api-samuel.herokuapp.com/actuator/health"
             # Adding the url to the `healthcheck` option of the action will make the action attempt
             # to perform a GET Request to that url and print the response if successful.
