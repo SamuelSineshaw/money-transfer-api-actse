@@ -38,7 +38,7 @@ public class AccountService {
 
 
     }
-    public Iterable<Account>allAccounts(){
+    public Iterable<Account> allAccounts(){
         return accountRepository.findAll();
     }
 

@@ -1,13 +1,9 @@
 package edu.act.moneytransfer;
 
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+//@RestController
 
-@RestController
-
-
+/*
 public class Hellocontroller {
     @GetMapping("/")
     public String sayhello(){
@@ -19,3 +15,4 @@ public class Hellocontroller {
         return "Hello"+ name +"!";
     }
 }
+*/
