@@ -1,0 +1,1 @@
+web: java -Dserver.port=$PORT -Dspring.profiles.active=production $JAVA_OPTS -jar target/money-transfer-2.5.4
