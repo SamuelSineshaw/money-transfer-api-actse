@@ -38,7 +38,7 @@ public class Account {
     private String lastName;
 
     @NotBlank(message = "email is mandatory")
-    @Column(nullable = false,unique = true)
+    @Column(nullable = false, unique = true)
     private String email;
 
     @NotBlank(message = "phone number is mandatory")
