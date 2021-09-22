@@ -47,7 +47,7 @@ public class TransferServiceIntegrationTest {
         //Then
         assertEquals(transfer.getAmount(),transferrequest.getAmount());
         assertNotNull(transfer.getId());
-        assertEquals(transfer.getStatus(), "asuccesfull");
+        assertEquals(transfer.getStatus(), "SUCCESSFUL");
 
        Account senderAccount = accountService.getAccountById(1L);
         Account receiverAccount = accountService.getAccountById(2L);
